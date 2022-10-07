@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="clock, 时钟, 网页时钟, web clock">
+    <meta name="author" content="Human-He, 岐头门吹雪">
+    <meta name="description" content="Human-He's learning timer">
+    <title>岐头门吹雪</title>
+
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="header">
+        <!-- 左侧-重生天数 -->
+        <div class="left">
+            <span id="rebirth-days"></span>
+        </div>
+
+        <!-- 右侧-标语 -->
+        <div class="right">
+            <input id="slogan" type="text" placeholder="你的时间非常有限，你打算如何度过今天？" disabled>
+            <div class="icon-edit">
+                <img id="edit" src="./static/edit.svg" alt="编辑">
+            </div>
+        </div>
+    </div>
+
+    <!-- 中部内容区 -->
+    <div class="content">
+        <!-- 内容区-左侧 -->
+        <div class="left">
+            <!-- 上侧-日期 -->
+            <div class="top">
+                <span id="date-month"></span>
+                <span id="date-separator">-</span>
+                <span id="date-day"></span>
+                <span id="date-zhou">周</span>
+                <span id="date-week"></span>
+            </div>
+
+            <!-- 下侧-时间 -->
+            <div class="bottom">
+                <span id="time-hour">10</span>
+                <span id="time-separator">:</span>
+                <span id="time-minute">08</span>
+            </div>
+        </div>
+
+        <!-- 内容区-右侧 -->
+        <div class="right">
+            <!-- 上侧-快速导航 -->
+            <div class="top">
+                <a href="https://www.yuque.com/humanhe/bugqq8/higtup" target="_blank"><img src="./static/sword.svg" alt="剑神"></a>
+                <a href="https://www.yuque.com/dashboard/notes" target="_blank"><img src="./static/note.svg" alt="小记"></a>
+                <a href="https://www.yuque.com/dashboard/my_books" target="_blank"><img src="./static/knowledge base.svg" alt="知识库"></a>
+                <a href="https://leetcode.cn/" target="_blank"><img src="./static/leetcode.svg" alt="力扣"></a>
+                <a href="https://juejin.cn/" target="_blank"><img src="./static/juejin.svg" alt="掘金"></a>
+            </div>
+
+            <!-- 下侧-计时器 -->
+            <div class="bottom">
+                <div id="btn-timer">开始学习</div>
+
+                <!-- 时间统计表 -->
+                <table id="time-table">
+                    <tr>
+                        <th colspan="3">学习时间统计</th>
+                    </tr>
+                    <tr>
+                        <th>今天</th>
+                        <th>本周</th>
+                        <th>本月</th>
+                    </tr>
+                    <tr>
+                        <td id="time-today"></td>
+                        <td id="time-week"></td>
+                        <td id="time-month"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- 引入js文件 -->
+<script src="./js/index.js"></script>
+</html>
